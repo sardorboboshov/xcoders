@@ -1,0 +1,27 @@
+# Pipeline Configuration
+# Settings for data processing pipelines
+
+pipeline:
+  # Data split ratios
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  
+  # Preprocessing
+  drop_identifier_cols: true
+  handle_missing_values: true
+  remove_duplicates: true
+  
+  # Feature engineering
+  create_interaction_features: true
+  create_risk_scores: true
+  
+  # Model training
+  use_ensemble: true
+  save_individual_models: true
+  
+  # Evaluation
+  save_predictions: true
+  save_metrics: true
+  generate_visualizations: true
+

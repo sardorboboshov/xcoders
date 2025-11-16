@@ -1,0 +1,61 @@
+# Model Configuration
+# Hyperparameters and training settings
+
+models:
+  xgboost:
+    objective: "binary:logistic"
+    eval_metric: ["auc", "aucpr"]
+    max_depth: 6
+    learning_rate: 0.03
+    n_estimators: 2000
+    min_child_weight: 2
+    gamma: 0.2
+    subsample: 0.8
+    colsample_bytree: 0.8
+    colsample_bylevel: 0.8
+    reg_alpha: 0.3
+    reg_lambda: 1.0
+    max_delta_step: 3
+    random_state: 42
+    n_jobs: -1
+    tree_method: "hist"
+    early_stopping_rounds: 150
+    
+  catboost:
+    iterations: 2000
+    learning_rate: 0.03
+    depth: 6
+    l2_leaf_reg: 2
+    loss_function: "Logloss"
+    eval_metric: "AUC"
+    random_seed: 42
+    verbose: 100
+    early_stopping_rounds: 150
+    min_data_in_leaf: 2
+    max_leaves: 31
+    
+  lightgbm:
+    objective: "binary"
+    metric: "auc"
+    boosting_type: "gbdt"
+    num_leaves: 31
+    learning_rate: 0.03
+    n_estimators: 2000
+    max_depth: 6
+    min_child_samples: 10
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.3
+    reg_lambda: 1.0
+    random_state: 42
+    n_jobs: -1
+
+training:
+  test_size: 0.15
+  val_size: 0.176
+  random_state: 42
+  balance_strategy: "adasyn"
+  sampling_ratio: 0.5
+  threshold_metric: "balanced_precision"
+  target_precision: 0.70
+

@@ -1,0 +1,26 @@
+# Data Configuration
+# Paths and settings for data processing
+
+data:
+  raw_dir: "data/raw"
+  bronze_dir: "data/bronze"
+  silver_dir: "data/silver"
+  gold_dir: "data/gold"
+  
+  # Input database
+  input_db: "dataset.duckdb"
+  
+  # Output databases
+  bronze_db: "data/bronze/dataset.duckdb"
+  silver_db: "data/silver/cleaned_dataset.duckdb"
+  gold_db: "data/gold/modeling_dataset.duckdb"
+  
+  # Tables to load
+  tables:
+    - application_metadata
+    - credit_history
+    - demographics
+    - financial_ratios
+    - geographic_data
+    - loan_details
+

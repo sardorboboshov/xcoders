@@ -1,1 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data files
+*.duckdb
 *.db
+*.csv
+*.parquet
+*.xlsx
+*.jsonl
+*.xml
+data/bronze/*
+data/silver/*
+data/gold/*
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+
+# Models and artifacts
+models/checkpoints/*
+models/artifacts/*
+models/metadata/*
+!models/checkpoints/.gitkeep
+!models/artifacts/.gitkeep
+!models/metadata/.gitkeep
+
+# Outputs
+outputs/*
+!outputs/.gitkeep
+!outputs/reports/.gitkeep
+!outputs/visualizations/.gitkeep
+!outputs/predictions/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# CatBoost
+catboost_info/
+
+raw/
