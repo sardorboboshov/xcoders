@@ -10,5 +10,5 @@ This is our hackathon project for CBU 2025.
 
 </div>
 
-## Project Image
-![Project Image](./photo_2025-11-16_12-31-05.jpg)
+## DB Schema
+![DB Schema](./photo_2025-11-16_12-31-05.jpg)
