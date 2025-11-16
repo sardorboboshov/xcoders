@@ -30,7 +30,6 @@ wheels/
 # Data files
 *.duckdb
 *.db
-*.csv
 *.parquet
 *.xlsx
 *.jsonl
@@ -80,3 +79,4 @@ logs/
 catboost_info/
 
 raw/
+data/evaluation_raw/
